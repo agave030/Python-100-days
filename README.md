@@ -1,2 +1,2 @@
 # Python-100-days
-This is for the course on udemy, 100 days of code.
+This is for the course on Udemy, 100 days of code.
