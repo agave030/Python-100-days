@@ -12,6 +12,7 @@ from art import logo
 from random import randint
 
 def times():
+    """Choose the difficulty. easy = 10 times, hard = 5 times"""
     difficulty = input("Choose a difficulty. Type 'easy' or 'hard': ").lower()
     if difficulty == 'easy':
         return 10
@@ -19,6 +20,7 @@ def times():
         return 5
 
 def compare(guess, answer):
+    """compare the guess and answer"""
     if guess > answer:
         print("Too high.\nGuess again.")
     elif guess < answer:
@@ -28,7 +30,7 @@ print(logo)
 print("Welcome to the Number Guessing Game!\nI'm thinking of a number between 1 and 100.")
 
 
-answer = randint(1, 101)
+answer = randint(1, 100)
 print(f"Pssst, the correct answer is {answer}")
 
 keep_guessing = True
